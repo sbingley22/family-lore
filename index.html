@@ -5,13 +5,72 @@
     <link rel="icon" type="image/svg+xml" href="/family-lore/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Family Lore</title>
-    <script type="module" crossorigin src="/family-lore/assets/index-C8TADTr6.js"></script>
-    <link rel="stylesheet" crossorigin href="/family-lore/assets/index-DMFSTYCX.css">
+    <script type="module" crossorigin src="/family-lore/assets/index-KSQQAsnN.js"></script>
+    <link rel="stylesheet" crossorigin href="/family-lore/assets/index-CXK-Jzia.css">
   <link rel="manifest" href="/family-lore/manifest.webmanifest"></head>
   <body>
     <div id="app">
-      <h1>family lore</h1>
-      <p>spooky</p>
+      <header>
+        <h1>Family Lore</h1>
+        <div>
+          <button onclick="showAll()">All</button>
+          <button onclick="filterByTag('mum')">Mum</button>
+          <button onclick="filterByTag('dad')">Dad</button>
+          <button onclick="filterByTag('lee')">Lee</button>
+          <button onclick="filterByTag('sean')">Sean</button>
+          <button onclick="sortByYear()">Chronological</button>
+        </div>
+      </header>
+
+      <div id="container">
+
+        <div class="card" data-year="" data-tags="">
+        </div>
+
+        <div class="card" data-year="2011" data-tags="lee,sean">
+          <img src="sean-cold-camping.jpg" alt="">
+          <p>Lee and Sean went out camping on a cold and wet September night in the peak district.</p>
+          <p>Sean foolishly thought he could build his own shelter out of twigs and leaves and start a fire for warmth. He was wrong on all accounts.</p>
+          <p>Had to retreat to Lees tent later in the night and couldn't sleep all night due to the cold.</p>
+        </div>
+
+        <div class="card" data-year="1985" data-tags="mum,dad">
+          <p>Parents went into the wrong appartment at sandsend.</p>
+          <p>The staff got mad, even though apparently it wasn't the parents fault. So dad ended up passing the suitcases across the balcony to the appartment adjacent.</p>
+        </div>
+
+        <div class="card" data-year="1975" data-tags="dad">
+          <img src="./dad-hair-cut.jpg" alt="">
+          <p>Dad got his hair cut at a scrap yard regularly. His dad knew some people there or something, so he got free hair cuts???</p>
+        </div>
+        
+        <div class="card" data-year="1985" data-tags="dad,mum">
+          <img src="parents-wedding.jpg" alt="">
+          <p>At the parents wedding they only got to eat a tiny triangle sandwhich and a handful of peanuts.</p>
+          <p>Mums mum invited a bunch of people mum didn't know who insulted her wedding dress and drank extra tea that the staff where harrasing mum to pay for after she just got back from visiting her Dad and someone else at hospital.</p>
+          <p>There was a bunch of booze though so most people enjoyed it.</p>
+        </div>
+
+        <div class="card" data-year="1985" data-tags="dad,mum">
+          <p>On the parents honeymoon they went on a holiday trip in England and where accidentally staying with a bunch of mentally challeged people. The parents were the only <i>sort of</i> sane ones there.</p>
+        </div>
+
+        <div class="card" data-year="2012" data-tags="sean">
+          <img src="sean-pajamas.jpg" alt="">
+          <p>Sean went to work on a day where you were allowed to ditch uniform and supposed to dress stylishly in his pajamas and dressing gown. Including going to and from work on the bus. The bosses where not amused. He also encounted a neiborough on the bus from across the road (Sylvia) who thought he had gone mad.</p>
+          <p>Sean went to work dressed as a Giraffe (2 man costume) whilst feeling like shit on christmass eve. He got lots of attention walking around crystal peaks after work.</p>
+        </div>
+
+        <div class="card" data-year="2001" data-tags="lee">
+          <p>Lee was sent to naughty boy school and when the teacher asked who has dyslexia everone put their hands up. From that point forward he refused to tell people about his dyslexia as he associated it with an excuse.</p>
+        </div>
+
+        <div class="card" data-year="1980" data-tags="mum">
+          <img src="mum-iggy-pop.jpg" alt="">
+          <p>Mum went to see Iggy Pop in her youth and at one point on the show he said "I want you" and pointed the spot light at mum and this punk girl standing behind her. Iggy Pop then bounced off stage and luckly went for the punk girl as mum was mortified.</p>
+        </div>
+
+      </div>
     </div>
   </body>
 </html>
