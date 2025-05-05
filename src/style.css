@@ -25,18 +25,24 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  /*place-items: center;*/
   min-width: 320px;
   min-height: 100vh;
 }
 
+header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
 h1 {
-  font-size: 3.2em;
+  font-size: 1.5em;
   line-height: 1.1;
 }
 
 #app {
-  max-width: 1280px;
+  max-width: 1024px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -59,6 +65,44 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+.card {
+  border: 1px solid white;
+  margin-bottom: 15px;
+  overflow: auto;
+  padding: 2px;
+}
+
+img {
+  object-fit: contain;
+  max-height: 256px;
+  float: right;
+  /*padding: 2px;*/
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+
+  h1 {
+    margin-top: 0;
+  }
+
+  p {
+    font-size: 1.0rem;
+  }
+  
+  img {
+    float: none;
+  }
 }
 
 @media (prefers-color-scheme: light) {
